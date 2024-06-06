@@ -13,6 +13,7 @@
 
 config HDM
 	tristate "HDM feature enable"
+	depends on QTEE_SHM_BRIDGE
 	depends on !ARCH_QTI_VM
 	default m
 	help
